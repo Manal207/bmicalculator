@@ -13,7 +13,6 @@ function App() {
   const [heightFeet, setHeightFeet] = useState("");
   const [heightInches, setHeightInches] = useState("");
   const [weight, setWeight] = useState("");
-  const [bmiCategory, setBmiCategory] = useState("");
   const [bmiResult, setBmiResult] = useState("");
 
   const calculateBMI = (event) => {
@@ -34,7 +33,6 @@ function App() {
       category = "Obese";
     }
 
-    setBmiCategory(category);
     setBmiResult(`Your BMI is ${bmi.toFixed(2)} (${category})`);
   };
 
